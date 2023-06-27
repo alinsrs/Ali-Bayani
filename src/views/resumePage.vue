@@ -1,5 +1,5 @@
 <template xmlns="http://www.w3.org/1999/html">
-  <v-main>
+  <v-container fluid class="ma-0 pa-0">
       <v-row class="pa-0 ma-0">
           <v-col cols="12" lg="6" md="5" order-md="1" order="2" order-lg="1"
                  class="text-center">
@@ -10,14 +10,15 @@
                   Ali Bayani
               </div>
           </v-col>
-          <v-col cols="12" lg="6" md="5" order="1" order-md="2" order-lg="2">
-              <div class="ma-0 pa-0" :style="{'background-color': $vuetify.theme.currentTheme.primary}"
-                   style="width: 100%; height: 100%">
+          <v-col cols="12" lg="6" md="5" order="1" order-md="2" order-lg="2" class="ma-0 pa-0">
+              <v-img src="../assets/frame.png"
 
-              </div>
+              >
+
+              </v-img>
           </v-col>
       </v-row>
-  </v-main>
+  </v-container>
 </template>
 
 <script>
