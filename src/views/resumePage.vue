@@ -217,4 +217,8 @@ export default {
   }
 }
 
+body{
+  overflow-x: hidden;
+}
+
 </style>
