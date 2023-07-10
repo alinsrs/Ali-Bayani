@@ -126,7 +126,7 @@ export default {
         {id: 4, picture: require('@/assets/test.jpg'), title: 'Project 4', description: 'Lorem Ipsum'},
         {id: 5, picture: require('@/assets/test.jpg'), title: 'Project 5', description: 'Lorem Ipsum'},
       ],
-      color: null
+      color: undefined
     }
   },
   computed: {
@@ -218,6 +218,9 @@ export default {
 }
 
 body{
+  overflow-x: hidden;
+}
+*{
   overflow-x: hidden;
 }
 

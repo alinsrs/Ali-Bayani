@@ -25,6 +25,9 @@ export default {
 body{
   overflow-x: hidden;
 }
+*{
+  overflow-x: hidden;
+}
 
 @media (max-width: 600px) {
   body {
