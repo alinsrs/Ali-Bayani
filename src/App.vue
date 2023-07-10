@@ -22,6 +22,10 @@ export default {
   width: 0;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 @media (max-width: 600px) {
   body {
     margin-right: calc(100vw - 100%);
