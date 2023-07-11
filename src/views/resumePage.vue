@@ -20,7 +20,7 @@
         <v-row>
           <v-col cols="10" lg="5" md="5" sm="5" xs="5" v-for="(card, index) in abilities"
                  :key="index"
-                 :style="`background-color: ${cardColor()}`"
+                 :style="{'background-color': cardColor()}"
                  class="px-2 ma-3 mx-auto"
                  style="color: white; font-size: 25px;
                           border-radius: 15px;
@@ -41,13 +41,11 @@
     </v-row>
 
 
-
-
-    <v-row style="display: grid">
+    <v-container fluid>
       <v-row class="text-h2 mb-10 ml-md-12 ml-lg-16 ml-sm-8 ml-6">
         Articles
       </v-row>
-      <v-row class="mx-8">
+      <v-row class="mx-8 justify-center">
         <v-col cols="12" lg="4" md="4" sm="6"
                v-for="(article, index) in articles" :key="index"
                class="my-3">
@@ -66,14 +64,14 @@
           </v-card>
         </v-col>
       </v-row>
-    </v-row>
+    </v-container>
 
 
 
-    <v-row>
-      <h2 class="text-h2 mb-10 ml-md-12 ml-lg-16 ml-sm-8 ml-6">
+    <v-container fluid>
+      <v-row class="text-h2 mb-10 ml-md-12 ml-lg-16 ml-sm-8 ml-6 pb-1">
         Projects
-      </h2>
+      </v-row>
       <v-row class="justify-center mx-8">
         <v-col cols="12" lg="4" md="4" sm="6"
                v-for="(project, index) in projects" :key="index"
@@ -93,7 +91,7 @@
           </v-card>
         </v-col>
       </v-row>
-    </v-row>
+    </v-container>
 
   </v-container>
 </template>
@@ -126,7 +124,6 @@ export default {
         {id: 4, picture: require('@/assets/test.jpg'), title: 'Project 4', description: 'Lorem Ipsum'},
         {id: 5, picture: require('@/assets/test.jpg'), title: 'Project 5', description: 'Lorem Ipsum'},
       ],
-      color: undefined
     }
   },
   computed: {
@@ -177,13 +174,9 @@ export default {
   },
   methods: {
     cardColor() {
-      this.color = Math.floor(Math.random() * 5)
-
-      if (this.color == 0) return '#FE5B02'
-      if (this.color == 1) return '#9E9E9E'
-      if (this.color == 2) return '#F24C3D'
-      if (this.color == 3) return '#FF7043'
-      if (this.color == 4) return '#212121'
+      const color = Math.floor(Math.random() * 5)
+      const colors = ['#FE5B02','#9E9E9E','#F24C3D','#FF7043','#212121']
+      return colors[color]
     },
   }
 }
