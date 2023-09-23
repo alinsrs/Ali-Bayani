@@ -1,4 +1,4 @@
-# ali-bayani
+# Ali Bayani
 
 ## Project setup
 ```
