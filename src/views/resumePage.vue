@@ -1,98 +1,130 @@
 <template>
-    <v-container fluid class="pt-0 mt-16">
-        <!--    <v-row class="pa-0 ma-0 mb-16">-->
-        <!--      <v-col cols="12" lg="6" md="6" order-md="1" order="2" order-lg="1"-->
-        <!--             class="text-center pb-sm-5 mx-auto">-->
-        <div class="justify-center mx-auto ml-10"
-             style="font-size: 80px; font-weight: 700;
-                          line-height: 6rem;">
-
-            <div style="line-height: 6rem" class="mb-5">
+    <v-container fluid class="pt-0 mt-10">
+        <div class="justify-center mx-auto ml-12"
+             style="font-size: 35px; font-weight: 700;">
+            <h1 style="line-height: 3rem; font-size: 35px; font-weight: 700" class="mb-12">
                 Ali Bayani
-            </div>
+            </h1>
         </div>
 
 
-        <v-row class="mx-8 rounded-xl" style="background-color: antiquewhite; max-height: 600px">
-            <v-col cols="12" lg="4" md="5" class="pa-0">
-                <v-img src="../assets/ali-bayani.jpg" height="600" class="rounded-l-xl"/>
+        <v-row class="mx-8 bioRow mb-16" style="background-color: antiquewhite;">
+            <v-col cols="12" lg="4" md="5" class="pa-0 imgCol">
+                <v-img src="../assets/ali-bayani.jpg" class="img"/>
             </v-col>
-            <v-col cols="12" lg="8" md="7">
-                <div>
-
+            <v-col cols="12" lg="8" md="7" style="background-color: antiquewhite;" class="bioCol">
+                <div class="mx-4 biography-text" align="justify">
+                    I am Ali Bayani, 22 years old, a recent graduate with a bachelor's degree in Computer Engineering
+                    from Tabriz, Iran.
+                    Graduating in August 2023 from Azad University of Tabriz with a bachelor's degree, I specialized in
+                    Artificial Intelligence.
+                    Achieving a commendable GPA of 3.74 out of 4 and securing the second-highest rank in the Computer
+                    Engineering and Information
+                    Technology department, I am a dedicated member of both the Scientific Association of Computer
+                    Engineering and Artificial Intelligence
+                    at my university and the Scientific Association of Telemedicine and Artificial Intelligence at
+                    Tabriz University of Medical Sciences.
+                    My profound passion lies in Machine Learning, Deep Learning, Artificial General Intelligence,
+                    Human-Centered AI, and Machine-Centered AI.
+                    In my pursuit of excellence, I have proposed innovative techniques, including a paper on heart
+                    disease diagnosis through
+                    Deep Learning, while consistently collaborating with AI professors daily. My unwavering goal is to
+                    emerge as a preeminent figure in the
+                    global AI research community, driven by the conviction that I possess the potential to make a
+                    substantial impact in this field.
                 </div>
             </v-col>
         </v-row>
 
 
-        <!--        <v-row>-->
-        <!--          <v-col cols="10" lg="5" md="5" sm="5" xs="5" v-for="(card, index) in abilities"-->
-        <!--                 :key="index"-->
-        <!--                 :style="{'background-color': cardColor()}"-->
-        <!--                 class="px-2 ma-3 mx-auto"-->
-        <!--                 style="color: white; font-size: 25px;-->
-        <!--                          border-radius: 15px;-->
-        <!--                          min-height: 85px;"-->
-        <!--          >-->
-        <!--            <div style="display: flex; height: 100%; align-items: center; justify-content: center;">-->
-        <!--              {{ card.course }}-->
-        <!--            </div>-->
-        <!--          </v-col>-->
-        <!--        </v-row>-->
-        <!--      </v-col>-->
-        <!--      <v-col cols="12" lg="6" md="6" order="1" order-md="2" order-lg="2" class="ma-0 pa-0">-->
-        <!--        <div class="frame" :style="{'margin-right': marginRight, 'height': height}">-->
-        <!--          <v-img src="../assets/ali-bayani-removed.png" class="image">-->
-        <!--          </v-img>-->
-        <!--        </div>-->
-        <!--      </v-col>-->
-        <!--    </v-row>-->
+        <div class="mt-2 article">
+            <h2 style="font-weight: 600; font-size: 33px; font-family: 'InterVariable'" class="ml-12 my-5">
+                Professional & Academic Engagement
+            </h2>
+            <ul class="ml-16">
+                <li> Member of Scientific Association of Computer Engineering and Artificial Intelligence, Azad
+                    University of Tabriz.
+                </li>
+                <li> Member of Scientific Association of Telemedicine and Artificial Intelligence, Tabriz University of
+                    Medical Sciences.
+                </li>
+                <li> Academic Achievement: Ranked second in the Computer Engineering department at Azad University of
+                    Tabriz.
+                </li>
+
+            </ul>
+
+            <v-divider style="margin-right: 500px; background-color: gray"></v-divider>
+
+            <h2 style="font-weight: 600; font-size: 33px; font-family: 'InterVariable'" class="ml-12 my-7">
+                Publications
+            </h2>
+
+            <ul class="ml-16">
+                <li class="mb-6">
+                    LDCNN: A new technique for Arrhythmia Detection from ECG signals using Linear Deep Convolutional
+                    Neural Network.
+                </li>
+                <v-img src="../assets/Publication.jpg" height="250px" width="560" style="border: 2px solid black"
+                       class="mb-5"/>
+            </ul>
+
+            <v-divider style="margin-right: 500px; background-color: gray"></v-divider>
 
 
-        <v-container fluid class="mt-16 ">
-            <v-row class="text-h2 mb-10 ml-md-12 ml-lg-16 ml-sm-8 ml-6">
-                Articles
-            </v-row>
-            <v-row class="ml-16">
-                <ul class="ml-10">
-                    <li class="overflow-x-visible">LDCNN: A new technique for Arrhythmia Detection from ECG signals
-                        using Linear Deep Convolutional Neural Network.
-                    </li>
-                    <li>LDCNN: A new technique for Arrhythmia Detection from ECG signals using Linear Deep Convolutional
-                        Neural Network.
-                    </li>
+            <h2 style="font-weight: 600; font-size: 33px; font-family: 'InterVariable'" class="ml-12 my-12">
+                Projects & Researches
+            </h2>
+            <ul class="ml-16">
+                <li> Diagnosis and classification of retinal diseases with deep learning algorithms.</li>
+                <div style="display: flex">
+                    <v-img src="../assets/eye1.jpeg" style="max-height: 300px; max-width: 300px; margin-right: 50px;"/>
+                    <v-img src="../assets/eye2.jpg" style="max-height: 300px; max-width: 300px"/>
+                </div>
 
-                </ul>
-            </v-row>
+                <li class="mt-10"> Presentation: Neuralink</li>
+                <v-img src="../assets/neuralink.png" style="max-width: 300px; max-height: 300px" class="ma-5"/>
 
-        </v-container>
+                <li> Home Delivery Food System Application. &nbsp; <a
+                        href="https://alibayani.online/upload/Ali_Bayani_&_Parsa_Khattat._Version_7.pdf"> Download
+                    PDF </a></li>
+
+                <li> Presentation: Familiarity with the concepts of classification and clustering. </li>
+
+                <li> Liquid Neural Networks </li>
+
+                <li> LDCNN: A new technique for Arrhythmia Detection from ECG signals using Linear Deep Convolutional Neural Network. </li>
+                    <v-img src="../assets/CNN_Arc.png"  style="max-width: 1250px"/>
+            </ul>
+
+            <v-divider style="margin-right: 500px; background-color: gray"></v-divider>
 
 
-        <v-container fluid>
-            <v-row class="text-h2 mb-10 ml-md-12 ml-lg-16 ml-sm-8 ml-6 pb-1">
-                Projects
-            </v-row>
-            <v-row class="justify-center mx-8">
-                <v-col cols="12" lg="4" md="4" sm="6"
-                       v-for="(project, index) in projects" :key="index"
-                       class="my-3">
-                    <v-card class="elevation-0" style="border: none;">
+            <h2 style="font-weight: 600; font-size: 33px; font-family: 'InterVariable'" class="ml-12 my-5">
+                Resume
+            </h2>
 
-                        <v-img :src="project.picture" style="border-radius: 25px; max-width: 370px; max-height: 370px;"
-                               class="mx-auto">
-                        </v-img>
-                        <v-card-title class="sml">
-                            {{ project.title }}
-                        </v-card-title>
 
-                        <v-card-text class="sml">
-                            {{ project.description }}
-                        </v-card-text>
-                    </v-card>
-                </v-col>
-            </v-row>
-        </v-container>
+            <v-divider style="margin-right: 500px; background-color: gray"></v-divider>
 
+
+            <h2 style="font-weight: 600; font-size: 33px; font-family: 'InterVariable'" class="ml-12 my-5">
+                Contact
+            </h2>
+
+            <ul class="ml-16">
+                <li> Gmail: <a href="mailto:aliwbayani@gmail.com">aliwbayani@gmail.com</a> </li>
+                <li> Linkedin: <a href="https://www.linkedin.com/in/ali-bayani-a13505209"> Ali Bayani  </a> </li>
+                <li> Github: <a href="https://github.com/aliebayani"> aliebayani </a> </li>
+                <li> Kaggle: <a href="https://www.kaggle.com/alibyni"> alibyni </a> </li>
+            </ul>
+
+
+
+            <v-divider style="margin-right: 500px; background-color: gray"></v-divider>
+
+
+        </div>
     </v-container>
 </template>
 
@@ -109,20 +141,6 @@ export default {
                 {course: 'Deep learning'},
                 {course: 'Machine learning'},
                 {course: 'AI'}
-            ],
-            articles: [
-                {id: 1, picture: require('@/assets/test.jpg'), title: 'Article 1', description: 'Lorem Ipsum'},
-                {id: 2, picture: require('@/assets/test.jpg'), title: 'Article 2', description: 'Lorem Ipsum'},
-                {id: 3, picture: require('@/assets/test.jpg'), title: 'Article 3', description: 'Lorem Ipsum'},
-                {id: 4, picture: require('@/assets/test.jpg'), title: 'Article 4', description: 'Lorem Ipsum'},
-                {id: 5, picture: require('@/assets/test.jpg'), title: 'Article 5', description: 'Lorem Ipsum'},
-            ],
-            projects: [
-                {id: 1, picture: require('@/assets/test.jpg'), title: 'Project 1', description: 'Lorem Ipsum'},
-                {id: 2, picture: require('@/assets/test.jpg'), title: 'Project 2', description: 'Lorem Ipsum'},
-                {id: 3, picture: require('@/assets/test.jpg'), title: 'Project 3', description: 'Lorem Ipsum'},
-                {id: 4, picture: require('@/assets/test.jpg'), title: 'Project 4', description: 'Lorem Ipsum'},
-                {id: 5, picture: require('@/assets/test.jpg'), title: 'Project 5', description: 'Lorem Ipsum'},
             ],
         }
     },
@@ -184,31 +202,87 @@ export default {
 
 <style scoped>
 
-.frame {
-    margin-left: auto;
-    width: 400px;
-    background: #FE5B02;
-    clip-path: inset();
-    border-radius: 0 0 50% 50%;
-    overflow: hidden;
+* {
+    font-family: 'verdana' !important;
 }
 
-.image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+li {
+    font-size: 22px !important;
+    margin-bottom: 30px!important;
 }
 
-@media (max-width: 900px) {
-    .sml {
-        margin-left: 5%;
+
+@media (max-width: 960px) {
+
+    .biography-text {
+        line-height: 2.7rem;
+        font-size: 22px;
+        width: fit-content;
     }
+
+    .bioRow {
+        border-radius: 25px 25px 25px 25px;
+    }
+
+    .bioCol {
+        /*height: 900px!important;*/
+        border-radius: 0 0 25px 25px;
+    }
+
+    .img {
+        border-radius: 25px 25px 0 0;
+        max-height: 600px;
+        background-position: top center;
+    }
+
 }
 
-@media (min-width: 900px) {
+@media (min-width: 960px) {
     .sml {
         margin-left: 9%;
     }
+
+    .biography-text {
+        line-height: 2.5rem;
+        font-size: 22px;
+        width: fit-content;
+
+    }
+
+    .bioRow {
+        border-radius: 25px 25px 25px 25px;
+    }
+
+    .img {
+        border-radius: 25px 0 0 25px;
+        max-height: 520px;
+        height: 520px;
+    }
+
+    .imgCol {
+        border-radius: 25px 0 0 25px;
+    }
+
+    .bioCol {
+        padding-top: 25px;
+        border-radius: 0 25px 25px 0;
+        max-height: 520px;
+        height: 520px;
+        overflow-y: auto;
+    }
+
+    .biography-text {
+        border-radius: 0 25px 25px 0;
+
+    }
+}
+
+.article ul li {
+    margin-bottom: 15px;
+}
+
+.article ul li:last-child {
+    margin-bottom: 3px;
 }
 
 
