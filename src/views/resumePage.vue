@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid>
+    <v-container fluid class="ma-0 pa-0">
 <!--        <div class="justify-center mx-auto ml-12"-->
 <!--             style="font-size: 32px; font-weight: 700;">-->
 <!--            <h1 style="line-height: 3rem; font-size: 32px; font-weight: 700" class="mb-12">-->
@@ -31,8 +31,9 @@
         </v-row>
 
 
-        <div class="mt-2 article">
-            <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable'" class="ml-12 my-5" id="pae">
+        <div class="mt-2 article pa-0 ma-0">
+          <div class="pa-0 pt-3" style="display: block; background: linear-gradient(to bottom, #F2EFEF, white)">
+            <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable';" class="ml-12 my-5" id="pae">
                 Professional & Academic Engagement
             </h2>
             <ul class="ml-16">
@@ -45,10 +46,12 @@
                 <li> Academic Achievement: Ranked second-best student in the Computer Engineering and Information Technology department at Azad University of
                     Tabriz.
                 </li>
-
             </ul>
+          </div>
 
-            <v-divider style="margin-right: 500px; background-color: gray"></v-divider>
+            <v-divider style="margin-right: 500px; background-color: gray" class="mb-0"></v-divider>
+
+            <div style="background: linear-gradient(to bottom, #F4DED9, white)" class="pt-3">
 
             <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable'" class="ml-12 my-7" id="publication">
                 Publications
@@ -60,12 +63,12 @@
                     Neural Network.
                 </li>
                 <v-img src="../assets/Publication.jpg" height="250px" width="560" style="border: 2px solid black"
-                       class="mb-5"/>
+                       class="mb-15"/>
             </ul>
+            </div>
+            <v-divider style="margin-right: 500px; background-color: gray" class="mb-0"></v-divider>
 
-            <v-divider style="margin-right: 500px; background-color: gray"></v-divider>
-
-
+            <div style="background: linear-gradient(to bottom, #C6D5C2, white);" class="pt-3">
             <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable'" class="ml-12 my-12" id="projects">
                 Projects & Researches
             </h2>
@@ -90,18 +93,19 @@
                 <li> LDCNN: A new technique for Arrhythmia Detection from ECG signals using Linear Deep Convolutional Neural Network. </li>
                     <v-img src="../assets/CNN_Arc.png"  style="max-width: 1250px"/>
             </ul>
+            </div>
 
             <v-divider style="margin-right: 500px; background-color: gray"></v-divider>
 
-
+            <div style="background: linear-gradient(to bottom, #D5CDDE, white)" class="pt-3">
             <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable'" class="ml-12 my-5" id="resume">
                 Resume
             </h2>
 
-
+            </div>
             <v-divider style="margin-right: 500px; background-color: gray"></v-divider>
 
-
+            <div style="background: linear-gradient(to bottom, #F4DED9, white)" class="pt-3">
             <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable'" class="ml-12 my-5" id="contact">
                 Contact
             </h2>
@@ -113,7 +117,7 @@
                 <li> <icon icon="devicon:kaggle" style="max-height: 55px; width: 55px; margin-bottom: 10px; margin-right: -10px; vertical-align: middle"> </icon> Kaggle: <a href="https://www.kaggle.com/alibyni"> alibyni </a> </li>
             </ul>
 
-
+            </div>
 
             <v-divider style="margin-right: 500px; background-color: gray"></v-divider>
 

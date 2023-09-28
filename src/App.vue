@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="pa-0 ma-0">
     <v-app-bar class="elevation-10 v-app-bar--fixed appBar" color="#F2EFEF" height="90vh">
       <v-row>
         <v-col cols="12" lg="3" md="4">
@@ -10,29 +10,29 @@
 
         <v-col cols="12" lg="9" md="8">
             <v-list style="display: flex" color="#F2EFEF">
-                <v-list-item>
-                  <a href="#bio"> Biography </a>
+                <v-list-item class="px-1">
+                  <a href="#bio" class="mr-2"> Biography </a>
                 </v-list-item>
-                <v-list-item>
-                  <a href="#pae"> Academic Engagement </a>
+                <v-list-item class="mr-1">
+                  <a href="#pae" class="mr-2" style="width: min-content"> Academic Engagement </a>
                 </v-list-item>
-              <v-list-item>
-                <a href="#publication"> Publications </a>
+              <v-list-item class="mr-1">
+                <a href="#publication" class="mr-2"> Publications </a>
               </v-list-item>
-              <v-list-item>
-                <a href="#project"> Projects & Researches</a>
+              <v-list-item class="mr-1">
+                <a href="#project" class="mr-2" style="width: min-content"> Projects & Researches</a>
             </v-list-item>
-              <v-list-item>
-                <a href="#resume"> Resume </a>
+              <v-list-item class="mr-1 pa-0">
+                <a href="#resume" class="mr-2"> Resume </a>
             </v-list-item>
-              <v-list-item>
-                  <a href="conatct"> Contact </a>
+              <v-list-item class="mr-1">
+                  <a href="conatct" class="mr-2"> Contact </a>
               </v-list-item>
             </v-list>
         </v-col>
       </v-row>
     </v-app-bar>
-    <v-main>
+    <v-main class="ma-0 pa-0">
       <router-view/>
     </v-main>
   </v-app>
