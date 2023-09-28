@@ -7,7 +7,8 @@
 <!--            </h1>-->
 <!--        </div>-->
 
-      <div style="height: 17vh; display: block"></div>
+      <div style="height: 17vh; display: block;" id="bio"></div>
+      <div style="height: 3vh; display: block"></div>
 
 
         <v-row class="mx-8 bioRow mb-16" style="background-color: antiquewhite;" id="bio">
@@ -27,20 +28,21 @@
                   <br>My unwavering goal is to emerge as a preeminent figure in the global AI research community, driven by the conviction
                   that I possess the potential to make a substantial impact in this field.
                 </div>
+              <div id="pae"></div>
             </v-col>
         </v-row>
 
 
         <div class="mt-2 article pa-0 ma-0">
-          <div class="pa-0 pt-3" style="display: block; background: linear-gradient(to bottom, #F2EFEF, white)">
-            <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable';" class="ml-12 my-5" id="pae">
+          <div class="pa-0 pt-3" style="display: block; background: linear-gradient(to bottom, #C6D5C2, white)">
+            <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable';" class="ml-12 my-5">
                 Professional & Academic Engagement
             </h2>
             <ul class="ml-16">
                 <li> Member of Scientific Association of Computer Engineering and Artificial Intelligence, Azad
                     University of Tabriz.
                 </li>
-                <li> Member of Scientific Association of Telemedicine and Artificial Intelligence, Tabriz University of
+                <li id="publication"> Member of Scientific Association of Telemedicine and Artificial Intelligence, Tabriz University of
                     Medical Sciences.
                 </li>
                 <li> Academic Achievement: Ranked second-best student in the Computer Engineering and Information Technology department at Azad University of
@@ -49,11 +51,11 @@
             </ul>
           </div>
 
-            <v-divider style="margin-right: 500px; background-color: gray" class="mb-0"></v-divider>
+            <v-divider style="margin-right: 500px; background-color: gray" class="mb-0" ></v-divider>
 
-            <div style="background: linear-gradient(to bottom, #F4DED9, white)" class="pt-3">
+            <div style="background: linear-gradient(to bottom, #F2EFEF, white)" class="pt-3">
 
-            <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable'" class="ml-12 my-7" id="publication">
+            <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable'" class="ml-12 my-7">
                 Publications
             </h2>
 
@@ -63,13 +65,13 @@
                     Neural Network.
                 </li>
                 <v-img src="../assets/Publication.jpg" height="250px" width="560" style="border: 2px solid black"
-                       class="mb-15"/>
+                       class="mb-15" id="projects"/>
             </ul>
             </div>
             <v-divider style="margin-right: 500px; background-color: gray" class="mb-0"></v-divider>
 
             <div style="background: linear-gradient(to bottom, #C6D5C2, white);" class="pt-3">
-            <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable'" class="ml-12 my-12" id="projects">
+            <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable'" class="ml-12 my-12">
                 Projects & Researches
             </h2>
             <ul class="ml-16">
@@ -82,8 +84,8 @@
                 <li class="mt-10"> Presentation: Neuralink</li>
                 <v-img src="../assets/neuralink.png" style="max-width: 300px; max-height: 300px" class="ma-5"/>
 
-                <li> Home Delivery Food System Application. &nbsp; <a
-                        href="https://alibayani.online/upload/Ali_Bayani_&_Parsa_Khattat._Version_7.pdf"> Download
+                <li> Home Delivery Food System Application. &nbsp;
+                  <a href="https://alibayani.online/upload/Ali_Bayani_&_Parsa_Khattat._Version_7.pdf"> Download
                     PDF </a></li>
 
                 <li> Presentation: Familiarity with the concepts of classification and clustering. </li>
@@ -93,28 +95,30 @@
                 <li> LDCNN: A new technique for Arrhythmia Detection from ECG signals using Linear Deep Convolutional Neural Network. </li>
                     <v-img src="../assets/CNN_Arc.png"  style="max-width: 1250px"/>
             </ul>
+              <div id="resume"></div>
             </div>
 
             <v-divider style="margin-right: 500px; background-color: gray"></v-divider>
 
-            <div style="background: linear-gradient(to bottom, #D5CDDE, white)" class="pt-3">
-            <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable'" class="ml-12 my-5" id="resume">
+            <div style="background: linear-gradient(to bottom, #F2EFEF, white)" class="pt-3">
+            <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable'" class="ml-12 my-5">
                 Resume
             </h2>
 
             </div>
             <v-divider style="margin-right: 500px; background-color: gray"></v-divider>
 
-            <div style="background: linear-gradient(to bottom, #F4DED9, white)" class="pt-3">
+            <div style="background: linear-gradient(to bottom, #C6D5C2, white)" class="pt-3">
             <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable'" class="ml-12 my-5" id="contact">
                 Contact
             </h2>
 
             <ul class="ml-16">
-                <li> <v-icon size="45px" color="red"> mdi-email-arrow-right </v-icon> Gmail: <a href="mailto:aliwbayani@gmail.com">aliwbayani@gmail.com</a> </li>
-                <li> <v-icon size="45px" color="#171515 "> mdi-github </v-icon> Github : <a href="https://github.com/aliebayani"> Ali Bayani  </a> </li>
-                <li> <v-icon size="45px" color="#0072b1"> mdi-linkedin </v-icon> Linkedin : <a href="https://www.linkedin.com/in/ali-bayani-a13505209"> aliebayani </a> </li>
-                <li> <icon icon="devicon:kaggle" style="max-height: 55px; width: 55px; margin-bottom: 10px; margin-right: -10px; vertical-align: middle"> </icon> Kaggle: <a href="https://www.kaggle.com/alibyni"> alibyni </a> </li>
+                <li> <v-icon size="35px" color="red"> mdi-email-arrow-right </v-icon> Gmail: <a href="mailto:aliwbayani@gmail.com">aliwbayani@gmail.com</a> </li>
+                <li> <v-icon size="35px" color="#171515 "> mdi-github </v-icon> Github : <a href="https://github.com/aliebayani"> Ali Bayani  </a> </li>
+                <li> <v-icon size="35px" color="#0072b1"> mdi-linkedin </v-icon> Linkedin : <a href="https://www.linkedin.com/in/ali-bayani-a13505209"> aliebayani </a> </li>
+                <li> <icon icon="devicon:kaggle" style="max-height: 45px; width: 45px; margin-bottom: 10px; margin-right: -10px;
+                 margin-left: -5px; vertical-align: middle"> </icon> Kaggle: <a href="https://www.kaggle.com/alibyni"> alibyni </a> </li>
             </ul>
 
             </div>
@@ -212,7 +216,7 @@ export default {
 }
 
 li {
-    font-size: 22px !important;
+    font-size: 17px !important;
     margin-bottom: 30px!important;
 }
 
@@ -243,9 +247,6 @@ li {
 }
 
 @media (min-width: 960px) {
-    .sml {
-        margin-left: 9%;
-    }
 
     .biography-text {
         line-height: 2.3rem;
@@ -281,6 +282,8 @@ li {
 
     }
 }
+
+
 
 .article ul li {
     margin-bottom: 15px;
