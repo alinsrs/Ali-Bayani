@@ -1,44 +1,38 @@
 <template>
-    <v-container fluid class="pt-0 mt-10">
-        <div class="justify-center mx-auto ml-12"
-             style="font-size: 35px; font-weight: 700;">
-            <h1 style="line-height: 3rem; font-size: 35px; font-weight: 700" class="mb-12">
-                Ali Bayani
-            </h1>
-        </div>
+    <v-container fluid>
+<!--        <div class="justify-center mx-auto ml-12"-->
+<!--             style="font-size: 32px; font-weight: 700;">-->
+<!--            <h1 style="line-height: 3rem; font-size: 32px; font-weight: 700" class="mb-12">-->
+<!--                Ali Bayani-->
+<!--            </h1>-->
+<!--        </div>-->
+
+      <div style="height: 17vh; display: block"></div>
 
 
-        <v-row class="mx-8 bioRow mb-16" style="background-color: antiquewhite;">
+        <v-row class="mx-8 bioRow mb-16" style="background-color: antiquewhite;" id="bio">
             <v-col cols="12" lg="4" md="5" class="pa-0 imgCol">
                 <v-img src="../assets/ali-bayani.jpg" class="img"/>
             </v-col>
             <v-col cols="12" lg="8" md="7" style="background-color: antiquewhite;" class="bioCol">
                 <div class="mx-4 biography-text" align="justify">
-                    I am Ali Bayani, 22 years old, a recent graduate with a bachelor's degree in Computer Engineering
-                    from Tabriz, Iran.
-                    Graduating in August 2023 from Azad University of Tabriz with a bachelor's degree, I specialized in
-                    Artificial Intelligence.
-                    Achieving a commendable GPA of 3.74 out of 4 and securing the second-highest rank in the Computer
-                    Engineering and Information
-                    Technology department, I am a dedicated member of both the Scientific Association of Computer
-                    Engineering and Artificial Intelligence
-                    at my university and the Scientific Association of Telemedicine and Artificial Intelligence at
-                    Tabriz University of Medical Sciences.
-                    My profound passion lies in Machine Learning, Deep Learning, Artificial General Intelligence,
-                    Human-Centered AI, and Machine-Centered AI.
-                    In my pursuit of excellence, I have proposed innovative techniques, including a paper on heart
-                    disease diagnosis through
-                    Deep Learning, while consistently collaborating with AI professors daily. My unwavering goal is to
-                    emerge as a preeminent figure in the
-                    global AI research community, driven by the conviction that I possess the potential to make a
-                    substantial impact in this field.
+                  I am Ali Bayani, 22 years old, a recent graduate with a bachelor's degree in Computer Engineering from Tabriz, Iran.
+                  Graduating in August 2023 from Azad University of Tabriz with a bachelor's degree, I specialized in Artificial Intelligence.
+                 <br> Achieving a commendable GPA of 3.74 out of 4 and securing the second-highest GPA in the whole Computer Engineering and
+                  Information Technology department, I am a dedicated member of both the Scientific Association of Computer Engineering and
+                  Artificial Intelligence at my university and the Scientific Association of Telemedicine and Artificial Intelligence at Tabriz University of Medical Sciences.
+                  My profound passion lies in Machine Learning, Deep Learning, Generative AI, Human-Centered AI, and Artificial General Intelligence (AGI) at the highest level.
+                  In my pursuit of excellence, I have proposed innovative techniques, including a paper on heart disease diagnosis through Deep Learning, while
+                  consistently collaborating with AI professors daily.
+                  <br>My unwavering goal is to emerge as a preeminent figure in the global AI research community, driven by the conviction
+                  that I possess the potential to make a substantial impact in this field.
                 </div>
             </v-col>
         </v-row>
 
 
         <div class="mt-2 article">
-            <h2 style="font-weight: 600; font-size: 33px; font-family: 'InterVariable'" class="ml-12 my-5">
+            <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable'" class="ml-12 my-5" id="pae">
                 Professional & Academic Engagement
             </h2>
             <ul class="ml-16">
@@ -48,7 +42,7 @@
                 <li> Member of Scientific Association of Telemedicine and Artificial Intelligence, Tabriz University of
                     Medical Sciences.
                 </li>
-                <li> Academic Achievement: Ranked second in the Computer Engineering department at Azad University of
+                <li> Academic Achievement: Ranked second-best student in the Computer Engineering and Information Technology department at Azad University of
                     Tabriz.
                 </li>
 
@@ -56,7 +50,7 @@
 
             <v-divider style="margin-right: 500px; background-color: gray"></v-divider>
 
-            <h2 style="font-weight: 600; font-size: 33px; font-family: 'InterVariable'" class="ml-12 my-7">
+            <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable'" class="ml-12 my-7" id="publication">
                 Publications
             </h2>
 
@@ -72,7 +66,7 @@
             <v-divider style="margin-right: 500px; background-color: gray"></v-divider>
 
 
-            <h2 style="font-weight: 600; font-size: 33px; font-family: 'InterVariable'" class="ml-12 my-12">
+            <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable'" class="ml-12 my-12" id="projects">
                 Projects & Researches
             </h2>
             <ul class="ml-16">
@@ -100,7 +94,7 @@
             <v-divider style="margin-right: 500px; background-color: gray"></v-divider>
 
 
-            <h2 style="font-weight: 600; font-size: 33px; font-family: 'InterVariable'" class="ml-12 my-5">
+            <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable'" class="ml-12 my-5" id="resume">
                 Resume
             </h2>
 
@@ -108,15 +102,15 @@
             <v-divider style="margin-right: 500px; background-color: gray"></v-divider>
 
 
-            <h2 style="font-weight: 600; font-size: 33px; font-family: 'InterVariable'" class="ml-12 my-5">
+            <h2 style="font-weight: 600; font-size: 30px; font-family: 'InterVariable'" class="ml-12 my-5" id="contact">
                 Contact
             </h2>
 
             <ul class="ml-16">
-                <li> Gmail: <a href="mailto:aliwbayani@gmail.com">aliwbayani@gmail.com</a> </li>
-                <li> Linkedin: <a href="https://www.linkedin.com/in/ali-bayani-a13505209"> Ali Bayani  </a> </li>
-                <li> Github: <a href="https://github.com/aliebayani"> aliebayani </a> </li>
-                <li> Kaggle: <a href="https://www.kaggle.com/alibyni"> alibyni </a> </li>
+                <li> <v-icon size="45px" color="red"> mdi-email-arrow-right </v-icon> Gmail: <a href="mailto:aliwbayani@gmail.com">aliwbayani@gmail.com</a> </li>
+                <li> <v-icon size="45px" color="#171515 "> mdi-github </v-icon> Github : <a href="https://github.com/aliebayani"> Ali Bayani  </a> </li>
+                <li> <v-icon size="45px" color="#0072b1"> mdi-linkedin </v-icon> Linkedin : <a href="https://www.linkedin.com/in/ali-bayani-a13505209"> aliebayani </a> </li>
+                <li> <icon icon="devicon:kaggle" style="max-height: 55px; width: 55px; margin-bottom: 10px; margin-right: -10px; vertical-align: middle"> </icon> Kaggle: <a href="https://www.kaggle.com/alibyni"> alibyni </a> </li>
             </ul>
 
 
@@ -129,8 +123,12 @@
 </template>
 
 <script>
+
+import { Icon } from '@iconify/vue2';
+
 export default {
     name: "resumePage",
+
     data() {
         return {
             colsCount: 2,
@@ -196,7 +194,10 @@ export default {
             const colors = ['#FE5B02', '#9E9E9E', '#F24C3D', '#FF7043', '#212121']
             return colors[color]
         },
-    }
+    },
+  components: {
+      Icon,
+  },
 }
 </script>
 
@@ -216,7 +217,7 @@ li {
 
     .biography-text {
         line-height: 2.7rem;
-        font-size: 22px;
+        font-size: 20px;
         width: fit-content;
     }
 
@@ -243,8 +244,8 @@ li {
     }
 
     .biography-text {
-        line-height: 2.5rem;
-        font-size: 22px;
+        line-height: 2.3rem;
+        font-size: 17px;
         width: fit-content;
 
     }
@@ -255,8 +256,8 @@ li {
 
     .img {
         border-radius: 25px 0 0 25px;
-        max-height: 520px;
-        height: 520px;
+        max-height: 530px;
+        height: 530px;
     }
 
     .imgCol {
@@ -266,8 +267,8 @@ li {
     .bioCol {
         padding-top: 25px;
         border-radius: 0 25px 25px 0;
-        max-height: 520px;
-        height: 520px;
+        max-height: 530px;
+        height: 530px;
         overflow-y: auto;
     }
 
