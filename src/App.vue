@@ -1,36 +1,33 @@
 <template>
   <v-app class="pa-0 ma-0">
-    <v-app-bar class="elevation-3 v-app-bar--fixed appBar" height="90vh" style="background-color: rgb(219,212,227)">
+    <v-app-bar class="elevation-3 v-app-bar--fixed appBar" height="90vh" style="background-color: #F2EFEF">
       <v-row>
         <v-col cols="12" lg="3" md="3">
           <h1 style="line-height: 3rem; font-size: 32px; font-weight: 700" class="ml-16 mt-2">
             Ali Bayani
           </h1>
         </v-col>
-        <v-col cols="12" lg="8" md="8" style="height: 100%; margin-left: -35px">
-          <v-list style="display: flex; background-color: rgb(219,212,227)">
+        <v-col cols="12" lg="8" md="8" style="height: 100%; margin-left: -85px">
+          <v-list style="display: flex; background-color: #F2EFEF;">
 
-            <v-list-item class="px-1">
-              <a href="#bio" class="mr-2"> Biography </a>
+            <v-list-item class="pa-0">
+              <a href="#bio" class="mx-auto"> Biography </a>
             </v-list-item>
 
-            <v-list-item class="mr-1">
-              <a href="#pae" class="mr-2" style="width: min-content"> Academic Engagement </a>
+
+            <v-list-item class="pa-0 mx-auto">
+              <a href="#publication" class="mx-auto"> Publications </a>
             </v-list-item>
 
-            <v-list-item class="mr-1">
-              <a href="#publication" class="mr-2"> Publications </a>
+            <v-list-item class="pa-0 mx-10">
+              <a href="#projects" class="mx-auto" style="width: max-content"> Projects & Researches</a>
             </v-list-item>
 
-            <v-list-item class="mr-1">
-              <a href="#projects" class="mr-2" style="width: min-content"> Projects & Researches</a>
+            <v-list-item class="pa-0 mx-auto" style="">
+              <a href="#resume" class="mx-auto"> Resume </a>
             </v-list-item>
-
-            <v-list-item class="mr-1 pa-0" style="width: 20px!important;">
-              <a href="#resume" class="mr-2"> Resume </a>
-            </v-list-item>
-            <v-list-item class="mr-1" style="margin-left: -25px">
-              <a href="#contact" class="mr-2"> Contact </a>
+            <v-list-item class="pa-0 mx-auto" style="">
+              <a href="#contact" class="mx-auto"> Contact </a>
             </v-list-item>
           </v-list>
         </v-col>
