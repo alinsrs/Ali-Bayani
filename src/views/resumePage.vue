@@ -1,287 +1,234 @@
 <template>
-  <v-container fluid class="ma-0" style="padding-left: 200px; padding-right: 200px">
-    <div style="height: 15vh; display: block;" id="bio"></div>
+  <v-container fluid>
+    <v-row>
+      <!-- Left Sidebar -->
+      <v-col cols="12" md="2">
+        <div class="sidebar">
+          <!-- Square-ish Profile Picture -->
+          <v-img
+              src="../assets/ali-bayani.jpg"
+              class="profile-pic"
+          ></v-img>
 
-
-    <v-row class="mx-0 bioRow mb-6" style="background-color: antiquewhite;" id="bio">
-      <v-col cols="12" lg="4" md="5" class="pa-0 imgCol">
-        <v-img src="../assets/ali-bayani.jpg" class="img"/>
-      </v-col>
-      <v-col cols="12" lg="8" md="7" style="background-color: antiquewhite;" class="bioCol">
-          <div class="mx-4 biography-text mb-3" style="font-size: 22px; "> Biography </div>
-        <div class="mx-4 biography-text">
-         <div class="mb-3">Welcome! &nbsp I am Ali Bayani, a recent graduate with a Bachelor's degree in Computer Engineering.
-          <br> Graduating in August 2023 from Azad University of Tabriz with a Bachelor's degree, I specialized in
-             Artificial Intelligence.
-          Achieving a GPA of 3.74 out of 4 and securing the second-highest GPA in the whole Computer
-          Engineering and Information Technology Department. </div>
-            <div class="mb-3"> I am a dedicated member of both the Scientific Association
-          of Computer Engineering and Artificial Intelligence at my university and the Scientific Association of
-          Telemedicine and Artificial Intelligence at Tabriz University of Medical Sciences. </div>
-          <div> My profound passion lies in
-          Machine Learning, Deep Learning, Generative AI, Human-Centered AI, and Artificial General Intelligence (AGI).
-          </div>
+          <h3 class="name-heading" style="text-align: center">Ali Bayani</h3>
+          <!-- Smaller subtitle text -->
+          <p class="subtitle" style="text-align: center">
+            Computer Engineer
+          </p>
+          <br>
+          <!-- Social / Quick Links -->
+          <ul class="sidebar-links">
+            <li>
+              <a href="https://github.com/aliebayani" target="_blank">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://scholar.google.com/citations?user=bACdbPYAAAAJ&hl=en" target="_blank">
+                Google Scholar
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ali-bayani-a13505209" target="_blank">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://www.kaggle.com/alibyni" target="_blank">
+                Kaggle
+              </a>
+            </li>
+            <li>
+              <a href="mailto:aliwbayani@gmail.com" target="_blank">
+                Gmail
+              </a>
+            </li>
+            <li>
+              <a href="mailto:alibayani@iaut.ac.ir" target="_blank">
+                Email
+              </a>
+            </li>
+          </ul>
         </div>
-        <div id="publication"></div>
+      </v-col>
+
+      <!-- Main Content Area -->
+      <v-col cols="12" md="9">
+        <!-- Home / Intro Section -->
+        <section id="home" class="my-5">
+          <h1>Welcome to Ali Bayani's Academic Website</h1>
+          <p>
+            I'm Ali Bayani, a computer engineer and researcher specializing in artificial intelligence, machine learning, and cognitive science.
+          </p>
+        </section>
+
+        <!-- About Me -->
+        <section id="bio" class="my-5">
+          <h2>About Me</h2>
+          <h3>Education</h3>
+          <p>
+            B.Sc. in Computer Engineering from Islamic Azad University, Tabriz Branch (GPA: 3.74/4).
+          </p>
+
+          <h3>Research & Academic Experience</h3>
+          <p>
+            I am currently focused on researching and writing research and conference papers in the fields of computer science, artificial intelligence, and software engineering. Since 2023, I have contributed to several research publications and conferences in these areas.
+          </p>
+
+          <h3>Research Interests</h3>
+          <p>
+            Computer Science &ensp; | &ensp; Artificial Intelligence &ensp; | &ensp; Machine Learning &ensp; | &ensp; Cognitive Science
+          </p>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications" class="my-5">
+          <h2>Publications</h2>
+          <ul>
+            <li>
+              LDCNN: A New Arrhythmia Detection Technique with ECG Signals Using a Linear Deep Convolutional Neural Network <br> <i> Ali Bayani, Masoud Kargar. Physiological Reports, Vol. 12, No. 17 (2024), Article e16182. </i> [<a href="https://doi.org/10.14814/phy2.16182" target="_blank">Link</a>]
+            </li>
+            <br>
+            <li>
+              A Consulting System for Portfolio Assets Allocation by Selecting the Best Agent in the Short Term Based on Cumulative Returns with Deep Reinforcement Learning <br> <i> Shahin Sharbaf Movassaghpour, Masoud Kargar, Ali Bayani, Alireza Assadzadeh, Ali Khakzadi. 2024 11th International Symposium on Telecommunications (IST), pp. 141-149, IEEE, 2024. </i> [<a href="http://dx.doi.org/10.1109/IST64061.2024.10843551" target="_blank">Link</a>]
+            </li>
+            <br>
+            <li>
+              Integrating CNN-LSTM Networks with Statistical Filtering Techniques for Intelligent IoT Intrusion Detection <br> <i> Fatemeh Imani, Masoud Kargar, Alireza Assadzadeh, Ali Bayani. 2024 8th International Conference on Smart Cities, Internet of Things and Applications (SCIoT), pp. 189-195, IEEE, 2024. </i> [<a href="http://dx.doi.org/10.1109/SCIoT62588.2024.10570107" target="_blank">Link</a>]
+            </li>
+            <br>
+            <li>
+              TransGAN-DX: A Hybrid Transformer-GAN Approach for Enhanced Cardiovascular Disease Diagnosis <br> <i> Ali Bayani, Masoud Kargar, Parmida Kargar, Ehsan Samadian. Published on January 10, 2025. American Hospital & Healthcare Management. </i> [<a href="https://www.americanhhm.com/researchinsights/transgan-dx-a-hybrid-transformer-gan-approach-for-enhanced-cardiovascular-disease-diagnosis" target="_blank">Link</a>]
+            </li>
+          </ul>
+        </section>
+
+        <section id="Magazine" class="my-5">
+          <h2>Magazine (Interview Article)</h2>
+          <ul>
+            <li>
+              <p>
+                <strong>AI-Driven Innovations in Cardiovascular Diagnostics and Remote Care</strong><br>
+                <em>Asian Hospital & Healthcare Management. Issue 67, 2025.</em> [<a href="https://www.asianhhm.com/magazine" target="_blank">Link</a>]
+              </p>
+              <img src="https://media.licdn.com/dms/image/v2/D4D22AQE-iK9nmxs4YQ/feedshare-shrink_1280/B4DZT6xARfG4Ak-/0/1739373950760?e=1743033600&v=beta&t=1fazdNjbwaWmIbSl7FXKX0nerFKaIYsY5RHWMjvWp3I" alt="AI-Driven Innovations in Cardiovascular Diagnostics" style="width: 9cm; height: 11cm;" class="mx-auto rounded-lg shadow-md">
+              <img src="https://media.licdn.com/dms/image/v2/D4D22AQHyNDXSKYwLcg/feedshare-shrink_2048_1536/B4DZT6xARSGkAo-/0/1739373951591?e=1743033600&v=beta&t=xzhuWtCQkOy9WNnk5mUvCcAe4APpWJXXIIIHnavD6uQ" alt="AI-Driven Innovations in Cardiovascular Diagnostics" style="width: 16cm; height: 11cm;" class="mx-auto rounded-lg shadow-md">
+            </li>
+          </ul>
+        </section>
+
+
+        <!-- CV Section -->
+        <section id="cv" class="my-5">
+          <h2>My CV</h2>
+          <p>
+            <a href="https://alibayani.online/upload/CV.pdf" target="_blank">
+              Download CV
+            </a>
+          </p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="my-5">
+          <h2>Contact</h2>
+          <ul>
+            <li>
+              Gmail: <a href="mailto:aliwbayani@gmail.com">aliwbayani@gmail.com</a>
+            </li>
+            <li>
+              Email: <a href="mailto:alibayani@iaut.ac.ir">alibayani@iaut.ac.ir</a>
+            </li>
+          </ul>
+        </section>
+        <br>
+        <p style="text-align: center">&copy; 2025 Ali Bayani. All rights reserved.</p>
+
       </v-col>
     </v-row>
-
-
-    <div class="mt-2 article pa-0 ma-0">
-
-      <div style="background: #F2EFEF; border-radius: 20px 20px 0 0" class="pt-3 pb-1">
-
-        <h2 style="font-weight: 600; font-size: 22px; font-family: 'InterVariable'" class="ml-12 my-7">
-          Publications
-        </h2>
-
-        <ul class="ml-16">
-          <li class="mb-6">
-            LDCNN: A new technique for Arrhythmia Detection from ECG signals using Linear Deep Convolutional
-            Neural Network.
-          </li>
-          <v-img src="../assets/Publication.jpg" height="190px" width="425.6px" style="border: 2px solid black"
-                  id="projects"/>
-        </ul>
-      </div>
-
-        <div style="background: #F2EFEF;" class="pt-2 pb-2 mb-0">
-        <h2 style="font-weight: 600; font-size: 22px; font-family: 'InterVariable'" class="ml-12 my-6">
-          Projects & Researches
-        </h2>
-        <ul class="ml-16">
-          <li> Diagnosis and classification of retinal diseases with deep learning algorithms.</li>
-          <div style="display: flex">
-            <v-img src="../assets/eye1.jpeg" style="max-height: 200px; max-width: 250px; margin-right: 50px;"/>
-            <v-img src="../assets/eye2.jpg" style="max-height: 200px; max-width: 250px"/>
-          </div>
-
-          <li class="mt-10"> Presentation: Neuralink</li>
-          <v-img src="../assets/neuralink.png" style="max-width: 300px; max-height: 300px" class="ma-5"/>
-
-          <li> Home Delivery Food System Application. &nbsp;
-            <a href="https://alibayani.online/upload/Ali_Bayani_&_Parsa_Khattat._Version_7.pdf"> Download
-              PDF </a></li>
-
-          <li> Presentation: Familiarity with the concepts of classification and clustering.</li>
-
-          <li> Liquid Neural Networks</li>
-
-          <li> LDCNN: A new technique for Arrhythmia Detection from ECG signals using Linear Deep Convolutional Neural
-            Network.
-          </li>
-          <v-img src="../assets/CNN_Arc.png" style="max-width: 900px"/>
-
-          <li>
-              Protein structure prediction using deep learning methods
-          </li>
-        </ul>
-        <div id="resume"></div>
-      </div>
-
-      <div style="background: #F2EFEF;" class="py-2 mp-0">
-        <p style="font-weight: 600; font-size: 22px; font-family: 'InterVariable'" class="ml-12 mb-3-5">
-          Resume <a class="ml-16 mt-16" style="font-size: 15px" href="https://alibayani.online/upload/Site_Resume.pdf"> Download Resume </a>
-        </p>
-      </div>
-
-      <div style="background: #F2EFEF; border-radius: 0 0 20px 20px" class="py-3">
-        <h2 style="font-weight: 600; font-size: 22px; font-family: 'InterVariable'" class="ml-12 my-5" id="contact">
-          Contact
-        </h2>
-
-        <ul class="ml-16" style="display: flex; list-style: none">
-          <li>
-            <v-icon size="30px" color="red" class="mr-2"> mdi-email-arrow-right</v-icon>
-            <a href="mailto:aliwbayani@gmail.com">aliwbayani@gmail.com</a></li>
-          <li  class="ml-8">
-            <v-icon size="30px" color="red" class="mr-2"> mdi-email-arrow-right</v-icon>
-            <a href="mailto:alibayani@iaut.ac.ir">alibayani@iaut.ac.ir</a></li>
-          <li  class="ml-8">
-            <v-icon size="30px" color="#171515" class="mr-2"> mdi-github</v-icon>
-            <a href="https://github.com/aliebayani"> aliebayani </a></li>
-          <li  class="ml-8">
-            <v-icon size="30px" color="#0072b1" class="mr-2"> mdi-linkedin</v-icon>
-            <a href="https://www.linkedin.com/in/ali-bayani-a13505209"> Ali Bayani </a></li>
-          <li  class="ml-8">
-            <icon icon="devicon:kaggle" style="max-height: 50px; width: 50px; margin-bottom: 10px; margin-right: -13px;
-                 margin-left: -5px; vertical-align: middle"></icon>
-            <a href="https://www.kaggle.com/alibyni"> alibyni </a></li>
-        </ul>
-
-      </div>
-
-    </div>
   </v-container>
 </template>
 
 <script>
-
-import {Icon} from '@iconify/vue2';
-
 export default {
-  name: "resumePage",
-
-  data() {
-    return {
-      colsCount: 2,
-      marginTop: 0,
-      abilities: [
-        {course: 'java'},
-        {course: 'JS'},
-        {course: 'Deep learning'},
-        {course: 'Machine learning'},
-        {course: 'AI'}
-      ],
-    }
-  },
-  computed: {
-    marginRight() {
-      if (this.$vuetify.breakpoint.sm) {
-        return 'auto'
-      }
-      if (this.$vuetify.breakpoint.md) {
-        return '10%'
-      }
-      if (this.$vuetify.breakpoint.lg) {
-        return '20%'
-      } else {
-        return "auto"
-      }
-    },
-    height() {
-      if (this.$vuetify.breakpoint.xs) {
-        return '450px'
-      }
-      if (this.$vuetify.breakpoint.sm) {
-        return '500px'
-      }
-      if (this.$vuetify.breakpoint.md) {
-        return '90%'
-      }
-      if (this.$vuetify.breakpoint.lg) {
-        return '90%'
-      } else {
-        return "auto"
-      }
-    },
-
-    width() {
-      if (this.$vuetify.breakpoint.xs) {
-        return '90%'
-      }
-      if (this.$vuetify.breakpoint.sm) {
-        return '45%'
-      }
-      if (this.$vuetify.breakpoint.md) {
-        return '28%'
-      }
-      if (this.$vuetify.breakpoint.lg) {
-        return '28%'
-      }
-    },
-  },
-  methods: {
-    cardColor() {
-      const color = Math.floor(Math.random() * 5)
-      const colors = ['#FE5B02', '#9E9E9E', '#F24C3D', '#FF7043', '#212121']
-      return colors[color]
-    },
-  },
-  components: {
-    Icon,
-  },
-}
+  name: "resumePage"
+};
 </script>
 
 <style scoped>
-
-body a{
-    color: #546E7A!important;
+/* Sidebar styling */
+.sidebar {
+  text-align: left;
+  border-right: 1px solid #ccc;
+  padding: 1rem;
+  height: 100%;
 }
 
-
-* {
-  font-family: 'verdana' !important;
-
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  object-fit: cover; /* So it stays square/cropped */
+  border-radius: 5px; /* Slightly rounded corners */
 }
 
-li {
-  font-size: 17px !important;
-  margin-bottom: 30px !important;
+/* Name heading under the picture */
+.name-heading {
+  margin-top: 1rem;
+  font-size: 1.5rem; /* reduced size from something bigger */
+  font-weight: 600;
 }
 
-
-@media (max-width: 960px) {
-
-  .biography-text {
-    line-height: 2.7rem;
-    font-size: 20px;
-    width: fit-content;
-  }
-
-  .bioRow {
-    border-radius: 25px 25px 25px 25px;
-  }
-
-  .bioCol {
-    /*height: 900px!important;*/
-    border-radius: 0 0 25px 25px;
-  }
-
-  .img {
-    border-radius: 25px 25px 0 0;
-    max-height: 450px;
-    background-position: top center;
-  }
-
+/* Smaller subtitle text below the name */
+.subtitle {
+  font-size: 1.1rem; /* reduce to fit better */
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  color: #666; /* subtle gray if desired */
 }
 
-@media (min-width: 960px) {
-
-  .biography-text {
-    line-height: 2.3rem;
-    font-size: 17px;
-    width: fit-content;
-
-  }
-
-  .bioRow {
-    border-radius: 25px 25px 25px 25px;
-  }
-
-  .img {
-    border-radius: 25px 0 0 25px;
-    max-height: 450px;
-  }
-
-  .imgCol {
-    border-radius: 25px 0 0 25px;
-  }
-
-  .bioCol {
-    padding-top: 25px;
-    border-radius: 0 25px 25px 0;
-    max-height: 450px;
-    height: 450px;
-    overflow-y: auto;
-  }
-
-  .biography-text {
-    border-radius: 0 25px 25px 0;
-
-  }
+/* Social / Quick Links */
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
 }
 
-
-.article ul li {
-  margin-bottom: 15px;
+.sidebar-links li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem; /* also smaller */
 }
 
-.article ul li:last-child {
-  margin-bottom: 3px;
+/* Headings & spacing */
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
+h1 {
+  font-size: 1.8rem;
+}
 
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
 
+h3 {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 </style>
